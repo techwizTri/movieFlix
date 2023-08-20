@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnionPlay Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <span class="movie" onclick="refreshPage()">Movie</span>
+          <span class="flix" onclick="refreshPage()">Flix</span>
+        </div>
+        <form>
+          <input
+            type="text"
+            spellcheck="false"
+            placeholder="Search for movies..."
+          />
+          <button>Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="movies"></div>
+
+      <svg
+        id="myBtn"
+        stroke="currentColor"
+        fill="none"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        height="3.5em"
+        width="3.5em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.8543 11.9741L16.2686 10.5599L12.0259 6.31724L7.78327 10.5599L9.19749 11.9741L11.0259 10.1457V17.6828H13.0259V10.1457L14.8543 11.9741Z"
+          fill="currentColor"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+
+      <div class="load-more">
+        <svg
+          id="loadBtn"
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 1024 1024"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm192 472c0 4.4-3.6 8-8 8H544v152c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V544H328c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h152V328c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v152h152c4.4 0 8 3.6 8 8v48z"
+          ></path>
+        </svg>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      function refreshPage() {
+        window.location.reload();
+      }
+    </script>
+  </body>
+</html>

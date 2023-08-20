@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Luckiest+Guy&display=swap");
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(15, 15, 15);
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0;
+  padding: 30px 50px 15px;
+  line-height: 20px;
+}
+
+.logo span {
+  font-size: 36px;
+  font-family: "Luckiest Guy", cursive;
+  cursor: pointer;
+}
+
+.flix {
+  color: #ffcc00;
+}
+
+form {
+  display: flex;
+  max-width: 400px;
+}
+
+form input {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  background-color: rgba(116, 106, 106, 0.274);
+  color: white;
+  border: black;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  background-color: #cccccc33;
+  border: none;
+}
+
+form button:hover {
+  background-color: rgba(116, 106, 106, 0.274);
+  color: #ffcc00;
+  cursor: pointer;
+}
+
+main {
+  color: #ccc;
+}
+
+.movies {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 350px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  max-height: 525px;
+  min-height: 525px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.movie-card img:hover {
+  background-color: #ffcc00;
+  box-shadow: 0px 2px 22px 8px rgba(255, 204, 0, 0.8);
+  cursor: pointer;
+}
+
+.movie-card h2 {
+  font-size: 12px;
+  margin-top: 14px;
+  color: #ccc;
+}
+
+.plus {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+#myBtn {
+  padding: 8px;
+  bottom: 20px;
+  right: 15px;
+  display: none;
+  position: fixed;
+  background-color: rgba(71, 68, 68, 0.356);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#myBtn:hover {
+  background-color: #ffcc00d8;
+}
+
+.load-more {
+  text-align: center;
+  font-size: 30px;
+}
+
+#loadBtn {
+  cursor: pointer;
+}
+
+/*diplayMovieInfo*/
+.info-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+  z-index: 1000;
+}
+
+.info-container {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-data {
+  padding: 1rem;
+  flex: 1;
+  color: white;
+}
+
+.info-data h2 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.info-data p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.info-data button {
+  width: 25px;
+  height: 35px;
+  background: none;
+  color: #ccc;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.info-data p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .movie-content {
+    flex-direction: column;
+  }
+}
