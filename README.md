@@ -1,2 +1,2 @@
 # onionPlay
-Fetch data frome TMDB api
+Fetch data from TMDB api
