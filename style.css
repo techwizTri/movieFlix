@@ -73,7 +73,7 @@ main {
 
 .movie-card {
   width: 350px;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -93,6 +93,7 @@ main {
   background-color: #ffcc00;
   box-shadow: 0px 2px 22px 8px rgba(255, 204, 0, 0.8);
   cursor: pointer;
+  transform: scale(1.03);
 }
 
 .movie-card h2 {
